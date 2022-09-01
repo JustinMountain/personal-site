@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Justin Mountain">
+    <meta name="email" content="moun0048@algonquinllive.com">
+    <meta name="date" content="2022-06-12">
+
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="styles/pages/courses.css" type="text/css">
+
+    <title>Justin Mountain - Courses</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="ch-top">
+            <a href="index.html">Justin Mountain</a>
+        </h1>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="resume.html">
+                        Resume
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        Courses
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-course-overview">
+            <h2 class="course-overview">
+                Algonquin College
+            </h2>
+            <h3 class="h3-course-overview">
+                Computer Programming
+            </h3>
+            <p class="p-course-overview">
+                I'm currently on the Dean's Honour List in the second semester of the 2-year diploma program. Check out
+                the courses I've taken:
+            </p>
+
+            <div class="search-filter">
+                <div class="search">
+                    <input type="text" size=50 placeholder="Search for a course" id="course-search">
+                    <button type="submit" for="course-search" id="search-button">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <div class="sort-flexbox">
+                <fieldset class="sort-card">
+                    <legend>Sort by Level</legend>
+                    <div id="sort-level">
+                        <div>
+                            <input type="radio" name="level" id="radio-all" value="All" checked>
+                            <label for="radio-all">All Levels</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="level" id="radio-first" value="Second Semester">
+                            <label for="radio-first">Second Semester</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="level" id="radio-second" value="First Semester">
+                            <label for="radio-second">First Semester</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="sort-card">
+                    <legend>Choose a sorting method</legend>
+                    <select name="sorting" id="sort-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="high-low">Highest Level -> Lowest Level</option>
+                        <option value="low-high">Lowest Level -> Highest Level</option>
+                        <option value="random">Random</option>
+                    </select>
+                </fieldset>
+            </div>
+
+
+        </section>
+
+        <section class="section-second-semester">
+            <h2 class="h2-semester">
+                Second Semester
+            </h2>
+            <div class="semester-flexbox">
+                <div class="class-card">
+                    <img src="images/second/webdev.jpg" alt="Web programming cover photo from Brightspace"
+                        class="course-image">
+                    <h3 class="h3-course">
+                        Web Programming
+                    </h3>
+                    <p class="p-course">
+                        CST8285
+                    </p>
+                    <p class="p-course">
+                        Full stack development through HTML, CSS, JavaScript, and PHP.
+                    </p>
+                </div>
+                <div class="class-card">
+                    <img src="images/second/joop.jpg" alt="JOOP cover photo from Brightspace" class="course-image">
+                    <h3 class="h3-course">
+                        Object Oriented Programming (Java)
+                    </h3>
+                    <p class="p-course">
+                        CST8284
+                    </p>
+                    <p class="p-course">
+                        Learning OOP techniques and best practices, inlcuding unit testing with JUnit.
+                    </p>
+                </div>
+                <div class="class-card">
+                    <img src="images/second/dbsystems.jpg" alt="Dtabase Systems cover photo from Brightspace"
+                        class="course-image">
+                    <h3 class="h3-course">
+                        Database Systems
+                    </h3>
+                    <p class="p-course">
+                        CST2355
+                    </p>
+                    <p class="p-course">
+                        Exploring different database paradigms including MS Access, MS SQL Server, MySQL, and Oracle.
+                    </p>
+                </div>
+                <div class="class-card">
+                    <img src="images/second/linux.jpg" alt="OS Fundamentals cover photo from Brightspace"
+                        class="course-image">
+                    <h3 class="h3-course">
+                        Operating Systems Fundamentals
+                    </h3>
+                    <p class="p-course">
+                        CST8102
+                    </p>
+                    <p class="p-course">
+                        Exploring the GNU/Linux environment for system administration.
+                    </p>
+                </div>
+                <div class="class-card">
+                    <img src="images/second/coop.jpg" alt="Co-op cover photo from Brightspace" class="course-image">
+                    <h3 class="h3-course">
+                        Cooperative Education Readiness
+                    </h3>
+                    <p class="p-course">
+                        GEP1001
+                    </p>
+                    <p class="p-course">
+                        Preparing for the co-op job search term starting September 2022.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-first-semester">
+            <h2 class="h2-semester">
+                First Semester
+            </h2>
+            <div class="semester-flexbox">
+                <div class="class-card">
+                    <img src="images/first/essentials.jpg" alt="Computer essentials cover photo from Brightspace"
+                        class="course-image">
+                    <h3 class="h3-course">
+                        Computer Essentials
+                    </h3>
+                    <p class="p-course">
+                        CST8101
+                    </p>
+                    <p class="p-course">
+                        The fundamentals of computer architecture and virtual machines.
+                    </p>
+                </div>
+                <div class="class-card">
+                    <img src="images/first/introcp.jpg" alt="Intro to computer programming cover photo from Brightspace"
+                        class="course-image">
+                    <h3 class="h3-course">
+                        Introduction to Computer Programming
+                    </h3>
+                    <p class="p-course">
+                        CST8116
+                    </p>
+                    <p class="p-course">
+                        The cornerstone functions of Object Oriented PRogramming with Java.
+                    </p>
+                </div>
+                <div class="class-card">
+                    <img src="images/first/introdb.jpg" alt="Intro to datasbases cover photo from Brightspace"
+                        class="course-image">
+                    <h3 class="h3-course">
+                        Introduction to Databases
+                    </h3>
+                    <p class="p-course">
+                        CST8215
+                    </p>
+                    <p class="p-course">
+                        The underlying concepts of database design and implementation.
+                    </p>
+                </div>
+                <div class="class-card">
+                    <img src="images/first/success.jpg" alt="Achieving success cover photo from Brightspace"
+                        class="course-image">
+                    <h3 class="h3-course">
+                        Achieving Success in Changing Environments
+                    </h3>
+                    <p class="p-course">
+                        CST8300
+                    </p>
+                    <p class="p-course">
+                        Discussion and exploration of what it means to be successful in the tech industry.
+                    </p>
+                </div>
+                <div class="class-card">
+                    <img src="images/first/math.jpg" alt="Technical Math for CS cover photo from Brightspace"
+                        class="course-image">
+                    <h3 class="h3-course">
+                        Technical Mathematics for Computer Science
+                    </h3>
+                    <p class="p-course">
+                        MAT8001C
+                    </p>
+                    <p class="p-course">
+                        Fundamental math skills and concepts for programming systems.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="foot-name">
+            <a href="#top">Justin Mountain</a>
+        </div>
+        <div class="foot-contact">
+            Contact: <a href="mailto:moun0048@algonquinlive.com">moun0048@algonquinlive.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+/* Table of Contents
+Fonts
+Variables
+Main Styling
+Header
+Footer */
+
+/* Fonts - Roboto and Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Variables */
+:root {
+    --clr-black: rgba(0, 0, 0, 0.9);
+    --clr-beige: hsla(39, 100%, 85.3%, 1);
+    --clr-gold: hsla(39, 100%, 50%, 1);
+    --clr-blue: hsla(221, 46.8%, 42.7%, 1);
+    --clr-navy: hsla(219, 64.6%, 34.3%, 1);
+
+    --ff-main: 'Roboto', sans-serif;
+    --ff-mono: 'Roboto Mono', monospace;
+
+    --padding: 10%;
+}
+
+/* Main Styling */
+html {
+    font-family: var(--ff-main);
+    font-size: 1.125rem;
+    font-weight: 500;
+    max-width: 1920px;
+    background-color: var(--clr-beige);
+    color: var(--clr-black);
+}
+
+section {
+    padding: 0 var(--padding);
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 5rem;
+    padding: 0 var(--padding);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: var(--ff-mono);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+h1 a:hover,
+h1 a:focus {
+    text-decoration: underline;
+    color: var(--clr-navy);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    color: var(--clr-navy);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 5rem;
+    padding: 0 var(--padding);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-family: var(--ff-mono);
+    font-size: 0.75rem;
+
+    background-color: var(--clr-navy);
+    color: var(--clr-beige);
+}
+
+.foot-contact a,
+.foot-name a {
+    text-decoration: none;
+    color: var(--clr-beige);
+}
+
+.foot-contact a:hover,
+.foot-contact a:focus,
+.foot-name a:hover,
+.foot-name a:focus {
+    text-decoration: underline;
+    color: var(--clr-gold);
+}

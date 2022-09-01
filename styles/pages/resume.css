@@ -1,0 +1,171 @@
+/* Resume Hero Section */
+.section-resume-intro {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "resume-hero-image resume-hero";
+  align-items: center;
+  margin: 5rem 0;
+  gap: 5rem;
+}
+
+#resume-hero {
+  grid-area: resume-hero;
+  padding-right: 10rem;
+}
+
+#resume-hero-image {
+  border-radius: 100vw;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  grid-area: resume-hero-image;
+}
+
+/* Main Styling */
+h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+h3 {
+  color: var(--clr-gold);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 3rem 0 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.resume-image {
+  float: right;
+  padding: 2rem var(--padding) 2rem 0;
+  margin: auto;
+  max-width: 200px;
+}
+
+/* Projects */
+#section-resume-projects {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 3rem, repeat(4, 1fr);
+  grid-template-areas:
+      "projects-heading projects-heading"
+      "course-text course-image"
+      "chess-text chess-image"
+      "calc-text calc-image"
+      "english-text english-image";
+
+  background-color: var(--clr-navy);
+  color: var(--clr-beige);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.h2-resume-projects {
+  text-align: center;
+  grid-area: projects-heading;
+}
+
+.h3-projects {
+  padding: 0 calc(var(--padding) / 2);
+}
+
+#chess-text {
+  grid-area: chess-text;
+}
+
+#chess-image {
+  grid-area: chess-image;
+}
+
+#calc-text {
+  grid-area: calc-text;
+}
+
+#calc-image {
+  grid-area: calc-image;
+}
+
+#course-text {
+  grid-area: course-text;
+}
+
+#course-image {
+  grid-area: course-image;
+}
+
+#english-text {
+  grid-area: english-text;
+}
+
+#english-image {
+  grid-area: english-image;
+}
+
+.p-projects {
+  font-weight: 400;
+  padding: 0 var(--padding);
+}
+
+/* Professional Journey */
+#section-resume-professional {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 3rem, repeat(3, 1fr);
+  grid-template-areas:
+      "professional-heading professional-heading"
+      "tutor-text tutor-image"
+      "japan-text japan-image"
+      "korea-text korea-image";
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.h2-resume-professional {
+  text-align: center;
+  grid-area: professional-heading;
+}
+
+.h3-professional {
+  padding: 0 calc(var(--padding) / 2);
+}
+
+#tutor-text {
+  grid-area: tutor-text;
+}
+
+#tutor-image {
+  grid-area: tutor-image;
+
+}
+
+#japan-text {
+  grid-area: japan-text;
+
+}
+
+#japan-image {
+  grid-area: japan-image;
+
+}
+
+#korea-text {
+  grid-area: korea-text;
+
+}
+
+#korea-image {
+  grid-area: korea-image;
+
+}
+
+.p-professional {
+  font-weight: 400;
+  padding: 0 var(--padding);
+}

@@ -1,0 +1,130 @@
+/* Hero Section */
+.section-hero {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "hero-text hero-image";
+  align-items: center;
+  margin: 5rem 0;
+}
+
+#hero-text {
+  grid-area: hero-text;
+  padding-right: 10rem;
+}
+
+#hero-image {
+  border-radius: 100vw;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  grid-area: hero-image;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.byline {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+.intro {
+  padding: 1rem 0;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* Education Section */
+.section-education {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas:
+      "education-heading education-heading"
+      "algonquin-image algonquin-text"
+      "trent-image trent-text";
+  background-color: var(--clr-navy);
+  color: var(--clr-beige);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.h2-education {
+  grid-area: education-heading;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: var(--clr-gold);
+}
+
+.h3-education {
+  color: var(--clr-gold);
+}
+
+.education-image {
+  max-width: 200px;
+}
+
+.algonquin-image {
+  grid-area: algonquin-image;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.algonquin-text {
+  grid-area: algonquin-text;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.trent-image {
+  grid-area: trent-image;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.trent-text {
+  grid-area: trent-text;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.h3-education {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.p-education {
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+
+/* Links Section */
+.section-links {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-links * {
+  margin: 0 auto;
+}
+
+.links-image {
+  display: block;
+  align-items: center;
+  border-radius: 100vw;
+  max-width: 200px;
+}
+
+.h2-links {
+  padding-top: 2rem;
+}
